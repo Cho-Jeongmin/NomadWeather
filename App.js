@@ -78,7 +78,6 @@ export default function App() {
                 style={{
                   flexDirection: "row",
                   alignItems: "center",
-                  justifyContent: "space-between",
                   width: "100%",
                 }}
               >
@@ -87,8 +86,9 @@ export default function App() {
                 </Text>
                 <Fontisto
                   name={icons[day.weather[0].main]}
-                  size={70}
+                  size={50}
                   color="white"
+                  style={{ marginLeft: 20 }}
                 />
               </View>
               <Text style={styles.description}>{day.weather[0].main}</Text>
@@ -107,28 +107,35 @@ const styles = StyleSheet.create({
     backgroundColor: "tomato",
   },
   city: {
-    flex: 1,
+    flex: 0.5,
     justifyContent: "center",
     alignItems: "center",
+    borderBottomColor: "white",
+    borderBottomWidth: 1,
+    margin: 20,
+    marginTop: 40,
   },
   cityName: {
     color: "white",
-    fontSize: 68,
+    fontSize: 60,
     fontWeight: "500",
   },
   weather: {},
   day: {
+    paddingTop: 60,
+    paddingLeft: 20,
     width: SCREEN_WIDTH,
     alignItems: "flex-start",
   },
   temp: {
+    marginTop: 30,
     color: "white",
     fontSize: 120,
   },
   description: {
     color: "white",
     marginTop: -30,
-    fontSize: 60,
+    fontSize: 55,
   },
   tinyText: {
     color: "white",
