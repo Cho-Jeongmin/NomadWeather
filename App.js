@@ -88,23 +88,27 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   cityName: {
+    color: "white",
     fontSize: 68,
     fontWeight: "500",
   },
   weather: {},
   day: {
     width: SCREEN_WIDTH,
-    alignItems: "center",
+    alignItems: "flex-start",
   },
   temp: {
-    fontSize: 178,
+    color: "white",
+    fontSize: 150,
     marginTop: 50,
   },
   description: {
+    color: "white",
     marginTop: -30,
     fontSize: 60,
   },
   tinyText: {
+    color: "white",
     fontSize: 20,
   },
 });
